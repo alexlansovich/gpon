@@ -1,5 +1,5 @@
-##Web management Huawei OLT MA5683 and MA5603
-#version 1.0
+# Web management Huawei OLT MA5683 and MA5603
+## version 1.0
 -----
 Для абонентов используется схема vlan per user (влан на абонента).  
 Выбраны определенные диапазоны вланов для QnQ и для клинетов.  
@@ -14,6 +14,7 @@ service = ont_id + 128 * port_id + 4096 * slot_id
 vlan = ont_id + 2100 + 128 * port_id - (port_id % 7)*1024
 ```
 Svlan будет браться из базы данных.
+Для понимания - вот таблица с данными, которые будут формироваться:
 
 | gpon port | QnQ Svlan | Cvlan users start | Cvlan users end | Service ports start | Service ports end |
 | - | - | - | - | - | - |
