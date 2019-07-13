@@ -44,3 +44,5 @@ device_type - установить "1" Huawei(на Bdcom пока не реал�
 ```ont port native-vlan $port_id $ont_id eth 1 vlan $cvlan priority 0```
 3. Создается service-port  
 ```service-port $service vlan $cvlan gpon 0/$gpon_id/$port_id ont $ont_id gemport 1 multi-service user-vlan $cvlan tag-transform translate```
+## В данной версии ONT не заносятся в базу данных при регистрации/удалении
+Для этого после регистрации/удаления необходимо нажать "Синхронизировать ONT"
