@@ -1,6 +1,8 @@
 # Web management Huawei OLT MA5683 and MA5603
-## version 1.0
-[Установка](install/install.md)
+### version 1.0
+Установка описана здесь [install/install.md ](install/install.md)  
+
+### Описание
 Для абонентов используется схема vlan per user (влан на абонента).  
 Выбраны определенные диапазоны вланов для QnQ и для клинетов.  
 Для QnQ мы задействуем вланы (верхний таг Svlan) с 2501 по 2512 (например).  
