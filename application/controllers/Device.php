@@ -477,6 +477,7 @@ class Device extends CI_Controller
                 $device_id = $data['ont']['id_device'];
                 $iface_id = $data['ont']['port_index'];
                 $ont_id = $data['ont']['ont_index'];
+                $data['ont']['id_device_port'] = $this->device_model->get_device_interface_sql_by_id_ifindex($device_id, $iface_id)['id'];
                 // get ONT LOGS ONLINE
                 $oid = '1.3.6.1.4.1.2011.6.128.1.1.2.101.1.6.'.$iface_id.'.'.$ont_id;
                 $data['log_up'] = $this->snmp_model->get_snmp_oid_walk($device_id, $oid);
