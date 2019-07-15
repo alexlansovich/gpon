@@ -9,7 +9,7 @@ if ($ont_data) {
 
         ?>
         <h1 class="ui header">
-            <?php echo anchor('device/view/'.$device['id'], $device['name']) . ' - ' .anchor('device/view/'.$device['id'].'/interface/'.$ont['port_index'], $ont['port_alias']) .  ' - ' . $ont['ont_mac']; ?>
+            <?php echo anchor('device/view/'.$device['id'], $device['name']) . ' - ' .anchor('device/view/'.$device['id'].'/interface/'.$ont['port_index'], $ont['id_device_port']) .  ' - ' . $ont['ont_mac']; ?>
         </h1>
         <table class="ui selectable celled table">
             <thead>
