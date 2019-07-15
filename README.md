@@ -135,3 +135,11 @@ Svlan будет браться из базы данных.
 | slot 5-13 | 2512 | 2740 | 2867 | 22144 | 22271 |
 | slot 5-14 | 2512 | 2868 | 2995 | 22272 | 22399 |
 | slot 5-15 | 2512 | 2996 | 3123 | 22400 | 22527 |
+
+## Благодарность за вдохновение  
+https://local.com.ua/forum/topic/89222-huawei-ma5683t-oid-%D0%B8-mib/  
+https://github.com/explicitnull/h-ont-activator  
+https://gpon.kou.li/huawei/olt/snmp  
+https://xakinfo.ru/files/mibs.txt  
+https://pastebin.com/wjj68SUX  
+https://pastebin.com/kS9s2Qcp  
