@@ -5,6 +5,8 @@
 3. Изменить параметр в файле application/config/config.php $config['base_url'] = 'http://URL';
 4. Изменить параметры подключения к базе данных в файле application/config/database.php в переменных 'username' => 'DB_USER' и 'password' => 'DB_PASSWORD';
 5. Для доступа авторизации используется логин admin@admin.com, пароль password;
+6. При необходимости установить модуль php-snmp
+7. При необходимости настроить snmp на сервере, создав пустой файл /etc/snmp/snmp.conf
 
 ## Работа с пользователями:
 Есть 4 группы пользователей  
