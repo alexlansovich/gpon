@@ -86,7 +86,7 @@ class Telnet_model extends CI_Model
         }
         else
         {
-            //driver DHCP SHPOLA
+            //driver DHCP
             $result = $this->phptelnet->Connect(long2ip($device['ip']), $device['login'], $device['password']);
             $this->phptelnet->DoCommand("ena\n", $result);
             //sleep (1);
