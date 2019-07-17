@@ -7,6 +7,7 @@
 5. Для доступа авторизации используется логин admin@admin.com, пароль password;
 6. При необходимости установить модуль php-snmp
 7. При необходимости настроить snmp на сервере, создав пустой файл /etc/snmp/snmp.conf
+8. Настроить Ваш вебсервер [https://www.codeigniter.com/user_guide/general/urls.html](https://www.codeigniter.com/user_guide/general/urls.html)
 
 ## Работа с пользователями:
 Есть 4 группы пользователей  
