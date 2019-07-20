@@ -35,13 +35,13 @@ class Device_model extends CI_Model
     {
         $interfaces = $this->device_model->get_device_interfaces_sql($id);
         // get OLT $ifOperStatus
-        $oid = 'IF-MIB::ifOperStatus';
+        $oid = '1.3.6.1.2.1.2.2.1.8';
         $ifOperStatus = $this->snmp_model->get_snmp_oid_walk($id, $oid);
         // get OLT ifAlias
-        $oid = 'IF-MIB::ifAlias';
+        $oid = '1.3.6.1.2.1.31.1.1.1.18';
         $ifAlias = $this->snmp_model->get_snmp_oid_walk($id, $oid);
         // get OLT ifSignal
-        $oid = 'SNMPv2-SMI::enterprises.2011.6.128.1.1.2.23.1.4';
+        $oid = '1.3.6.1.4.1.2011.6.128.1.1.2.23.1.4';
         $ifSignal = $this->snmp_model->get_snmp_oid_walk($id, $oid);
         // set $ifOperStatus, ifAlias, ifSignal to interface array by SNMP results
         foreach ($interfaces as $key => $item) {
