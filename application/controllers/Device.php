@@ -491,7 +491,7 @@ class Device extends CI_Controller
                 $data['device'] = $this->device_model->get_device_by_id($device_id);
                 $data['ont_data'] = $this->ont_model->get_ont_snmp_info($id);
                 // get OLT ifSignal
-                $oid = 'SNMPv2-SMI::enterprises.2011.6.128.1.1.2.23.1.4';
+                $oid = '1.3.6.1.4.1.2011.6.128.1.1.2.23.1.4';
                 $olt_signal = $oid . '.' . $data['ont']['port_index'];
                 $data['olt_data'] = $this->snmp_model->get_snmp_oid($device_id, $olt_signal);
                 $data['header'] = 'Информация об ONT - '.$data['ont']['ont_desc'];
@@ -528,7 +528,7 @@ class Device extends CI_Controller
                 $oid = '1.3.6.1.4.1.2011.6.128.1.1.2.43.1.9.'.$iface_id.'.'.$ont_id;
                 $data['ont']['ont_desc'] = $this->snmp_model->get_snmp_oid($device_id, $oid);
                 // get ONT mac
-                $oid = 'SNMPv2-SMI::enterprises.2011.6.128.1.1.2.43.1.3.'.$iface_id.'.'.$ont_id;
+                $oid = '1.3.6.1.4.1.2011.6.128.1.1.2.43.1.3.'.$iface_id.'.'.$ont_id;
                 $data['ont']['ont_mac'] = $this->snmp_model->get_snmp_oid($device_id, $oid);
                 $data['ont']['ont_mac'] = str_replace(' ','',$data['ont']['ont_mac']);
                 // get ONT LOGS DownCause
@@ -543,7 +543,7 @@ class Device extends CI_Controller
                 // get ONT data by snmp
                 $data['ont_data'] = $this->ont_model->get_ont_snmp_info_port($device_id, $iface_id, $ont_id);
                 // get OLT ifSignal
-                $oid = 'SNMPv2-SMI::enterprises.2011.6.128.1.1.2.23.1.4';
+                $oid = '1.3.6.1.4.1.2011.6.128.1.1.2.23.1.4';
                 $olt_signal = $oid . '.' . $iface_id;
                 $data['olt_data'] = $this->snmp_model->get_snmp_oid($device_id, $olt_signal);
                 $data['header'] = 'Информация об ONT - '.$data['ont']['ont_desc'];
