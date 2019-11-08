@@ -78,7 +78,8 @@ class Snmp_model extends CI_Model
             $t = count($oid_array);
             $if_index = $oid_array[$t-2];
             $result[$count]['if_index'] = $if_index;
-            $value = str_replace(' ','',$value);
+            //удаляем пробелы только если строка 26 символов string(26) ""46 47 58 50 00 B5 48 29 ""
+            if (strlen($value) === 26 ) $value = str_replace(' ','',$value);
             // бывает получаем "BDCMb/\"`"
             // надо убрать " с начала и с конца
             // и убрать \ в средине
